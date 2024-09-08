@@ -14,9 +14,14 @@ let instance;
 function render(props) {
   if (!store.hasModule("global")) {
     // 当独立运行微应用时，state需要初始化赋值，否则会报错
-    const initState = props.initState || {
-      num: 0,
-    };
+    let initState;
+    if (props && props.initState) {
+      initState = props.initState
+    } else {
+      initState = {
+        state: 0,
+      };
+    }
     // 将父应用的数据存储到子应用中，命名空间固定为global
     const globalModule = {
       namespaced: true,

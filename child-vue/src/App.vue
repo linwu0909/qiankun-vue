@@ -2,7 +2,7 @@
   <div class="child-app">
     <el-menu :router="true" default-active="/" class="child-menu">
       <el-menu-item index="/">Home</el-menu-item>
-      <el-menu-item index="about">About</el-menu-item>
+      <el-menu-item index="/about">About</el-menu-item>
     </el-menu>
     <router-view />
   </div>
