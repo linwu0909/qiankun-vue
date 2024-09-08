@@ -4,7 +4,7 @@
       <el-menu-item index="/">Home</el-menu-item>
       <el-menu-item index="/about">About</el-menu-item>
       <!-- <el-menu-item index="/child">Child</el-menu-item> -->
-      <el-menu-item index="/vue">Vue</el-menu-item>
+      <el-menu-item index="/child">Child</el-menu-item>
     </el-menu>
     <!-- <h1>总应用的state.num：{{ $store.state.count }}</h1> -->
     <!-- <button @click="addCount(10)">总应用增加20</button> -->
@@ -12,7 +12,7 @@
     <button @click="addNum(10)">主应用增加10</button>
     <router-view></router-view>
     <!-- <div id="child"></div> -->
-    <div id="vue"></div>
+    <div id="child"></div>
   </div>
 </template>
 

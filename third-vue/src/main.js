@@ -22,10 +22,10 @@ registerMicroApps([
   //   },
   // },
   {
-    name: "vue", // 子应用名称
+    name: "child", // 子应用名称
     entry: "//localhost:10000", // 子应用入口
-    container: "#vue", // 子应用在主应用中显示的位置
-    activeRule: "/vue", // 子应用激活的路由规则
+    container: "#child", // 子应用在主应用中显示的位置
+    activeRule: "/child", // 子应用激活的路由规则
     props: {
       initState: store.state,
     },

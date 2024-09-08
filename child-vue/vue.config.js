@@ -9,7 +9,7 @@ module.exports = defineConfig({
   },
   configureWebpack: {
     output: {
-      library: "vue",
+      library: "child",
       libraryTarget: "umd",
     },
   },
